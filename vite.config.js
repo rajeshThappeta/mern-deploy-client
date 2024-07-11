@@ -7,7 +7,7 @@ export default defineConfig({
     proxy: {
       // with options: http://localhost:5173/api/bar-> http://jsonplaceholder.typicode.com/bar
       "/api": {
-        target: "http://localhost:3000",
+        target: "https://mern-deploy-backend-3e92w1hwd-rajeshthappetas-projects.vercel.app",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
