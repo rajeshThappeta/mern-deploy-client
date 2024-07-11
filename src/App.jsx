@@ -6,7 +6,7 @@ import React from "react";
 function App() {
   const [users, setUsers] = useState([]);
   const getUsers = async () => {
-    let res = await fetch("https://mern-deploy-backend.vercel.app/users");
+    let res = await fetch("mern-deploy-backend.vercel.app/users");
     console.log("res", res);
     let usersList = await res.json();
     setUsers(usersList.payload);
