@@ -10,7 +10,7 @@ function App() {
     console.log("res", res);
     let usersList = await res.json();
     console.log(usersList)
-    setUsers(usersList.payload);
+    setUsers(usersList);
   };
 
   //useEffect(()=>{getUsers()},[])
