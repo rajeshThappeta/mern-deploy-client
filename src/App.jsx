@@ -9,6 +9,7 @@ function App() {
     let res = await fetch("https://mern-deploy-backend.vercel.app/users");
     console.log("res", res);
     let usersList = await res.json();
+    console.log(usersList)
     setUsers(usersList.payload);
   };
 
